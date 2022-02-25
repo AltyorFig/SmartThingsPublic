@@ -79,6 +79,7 @@ metadata {
 
 		// NodOn
 		fingerprint profileId: "0104", deviceId: "0002", inClusters: "0000, 0003, 0004, 0005, 0006, 0007, 1000, FC57", outClusters: "0019", manufacturer: "NodOn", model: "SIN-4-1-20", deviceJoinName: "NodOn Switch"
+		fingerprint profileId: "0104", deviceId: "0002", inClusters: "0000, 0003, 0004, 0005, 0006, 0007, 1000, FC57", outClusters: "0019", manufacturer: "NodOn", model: "SIN-4-1-20_PRO", deviceJoinName: "NodOn Switch"
         
 		// Orvibo
 		fingerprint profileId: "0104", inClusters: "0000, 0005, 0004, 0006", outClusters: "0000", manufacturer: "ORVIBO", model: "095db3379e414477ba6c2f7e0c6aa026", deviceJoinName: "Orvibo Switch" //Orvibo Smart Switch
@@ -199,3 +200,5 @@ def configure() {
 	log.debug "Configuring Reporting and Bindings."
 	zigbee.onOffRefresh() + zigbee.onOffConfig()
 }
+
+
